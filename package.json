@@ -1,6 +1,6 @@
 {
   "name": "machinepack-cloudinary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SDK for working with Cloudinary platform.",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
