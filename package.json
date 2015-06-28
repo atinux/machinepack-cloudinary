@@ -1,0 +1,36 @@
+{
+  "name": "machinepack-cloudinary",
+  "version": "1.0.0",
+  "description": "SDK for working with Cloudinary platform.",
+  "scripts": {
+    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
+  },
+  "keywords": [
+    "Cloudinary",
+    "machines",
+    "machinepack"
+  ],
+  "author": "atinux",
+  "license": "MIT",
+  "dependencies": {
+    "cloudinary": "^1.2.1",
+    "machine": "^10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Atinux/machinepack-cloudinary.git"
+  },
+  "devDependencies": {
+    "test-machinepack-mocha": "^2.0.0"
+  },
+  "machinepack": {
+    "friendlyName": "Cloudinary",
+    "iconSrc": "https://raw.githubusercontent.com/Atinux/machinepack-cloudinary/master/cloudinary-logo.png",
+    "machineDir": "machines/",
+    "machines": [
+      "upload-image",
+      "get-image-urls",
+      "delete-image"
+    ]
+  }
+}
