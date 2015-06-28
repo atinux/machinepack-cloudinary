@@ -1,4 +1,6 @@
 module.exports = {
+  friendlyName: 'Upload Image',
+  description: 'Upload image on Cloudinary.',
   "inputs": {
     "cloudName": {
       "id": "f146b91d-fa3a-4a34-8dbf-62a344758c77",

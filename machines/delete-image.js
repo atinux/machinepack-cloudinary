@@ -1,4 +1,6 @@
 module.exports = {
+  friendlyName: 'Delete Image',
+  description: 'Delete an image on Cloudinary.',
   "inputs": {
     "cloudName": {
       "id": "1984556d-362b-40f7-9cdc-487e22496515",

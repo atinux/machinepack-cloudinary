@@ -1,4 +1,6 @@
 module.exports = {
+  friendlyName: 'Get Image URLS',
+  description: 'Get Image URLS from Cloudinary based on Image ID.',
   "inputs": {
     "cloudName": {
       "friendlyName": "Cloud name",
