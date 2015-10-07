@@ -64,6 +64,7 @@ module.exports = {
     },
   },
   defaultExit: "success",
+  environment: ['req'],
   fn: function(inputs, exits, env) {
     var cloudinary = require('cloudinary');
     cloudinary.config({
