@@ -1,61 +1,54 @@
 module.exports = {
   friendlyName: 'Get Image URLS',
   description: 'Get Image URLS from Cloudinary based on Image ID.',
-  "inputs": {
-    "cloudName": {
-      "friendlyName": "Cloud name",
-      "description": "Your Cloudinary cloud name key.",
-      "example": "abc",
-      "required": true,
-      "addedManually": true
+  inputs: {
+    cloudName: {
+      friendlyName: "Cloud name",
+      description: "Your Cloudinary cloud name key.",
+      example: "abc",
+      required: true,
     },
-    "apiKey": {
-      "friendlyName": "API Key",
-      "description": "Your Cloudinary API key.",
-      "example": "abcd",
-      "required": true,
-      "addedManually": true
+    apiKey: {
+      friendlyName: "API Key",
+      description: "Your Cloudinary API key.",
+      example: "abcd",
+      required: true,
     },
-    "apiSecret": {
-      "friendlyName": "API Secret",
-      "description": "Your Cloudinary secret API key.",
-      "example": "abcd",
-      "required": true,
-      "addedManually": true
+    apiSecret: {
+      friendlyName: "API Secret",
+      description: "Your Cloudinary secret API key.",
+      example: "abcd",
+      required: true,
     },
-    "imageId": {
-      "friendlyName": "Image ID",
-      "description": "Image ID on Cloudinary.",
-      "example": "abc",
-      "required": true,
-      "addedManually": true
+    imageId: {
+      friendlyName: "Image ID",
+      description: "Image ID on Cloudinary.",
+      example: "abc",
+      required: true,
     },
-    "options": {
-      "id": "fb853ccc-7c4f-4492-9961-a5a3f890c8e4",
-      "extendedDescription": "",
-      "friendlyName": "Image options",
-      "description": "Image options : http://cloudinary.com/documentation/node_image_manipulation",
-      "example": {},
-      "required": true,
-      "addedManually": true
+    options: {
+      id: "fb853ccc-7c4f-4492-9961-a5a3f890c8e4",
+      friendlyName: "Image options",
+      description: "Image options : http://cloudinary.com/documentation/node_image_manipulation",
+      example: {},
+      required: false,
+      defaultsTo: {}
     }
   },
-  "exits": {
-    "error": {
-      "example": undefined
-    },
-    "success": {
-      "id": "success",
-      "friendlyName": "then",
-      "description": "HTTP and HTTPS links to image.",
-      "example": {
-        "http": "url",
-        "https": "url"
+  exits: {
+    error: {},
+    success: {
+      id: "success",
+      friendlyName: "then",
+      description: "HTTP and HTTPS links to image.",
+      example: {
+        http: "url",
+        https: "url"
       }
     }
   },
-  "defaultExit": "success",
-  "fn": function(inputs, exits, env) {
+  defaultExit: "success",
+  fn: function(inputs, exits, env) {
     var cloudinary = require('cloudinary');
 
     cloudinary.config({
@@ -72,5 +65,5 @@ module.exports = {
       https: https
     });
   },
-  "identity": "get-image-urls"
+  identity: "get-image-urls"
 };
